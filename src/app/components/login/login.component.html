@@ -1,0 +1,23 @@
+<div class="row my-5">
+    <div class="col-sm-11 col-md-6 col-lg-4 mx-auto my-auto card">
+        <form method="post">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginTxtEmail">Email</label>
+                <input type="email" id="loginTxtEmail" class="form-control" name="loginTxtEmail" [(ngModel)]="loginTxtEmail"/>            
+            </div>
+        
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="loginTxtPwd">Password</label>
+                <input type="password" id="loginTxtPwd" class="form-control" name="loginTxtPwd" [(ngModel)]="loginTxtPwd"/>            
+            </div>
+                
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4 col-12 
+            col-sm-12 col-md-12" (click)="btnLogin()">Iniciar sesion</button>
+        
+        </form>
+    </div>
+</div>
+
